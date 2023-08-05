@@ -6,6 +6,7 @@ export interface CounterState {
   title: string;
 }
 
+// action creator
 export function Increment(amount = 1) {
   return {
     type: INCREMENT_COUNTER,
@@ -13,6 +14,7 @@ export function Increment(amount = 1) {
   };
 }
 
+// action creator
 export function Decrement(amount = 1) {
   return {
     type: DECREMENT_COUNTER,
