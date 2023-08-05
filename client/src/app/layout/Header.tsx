@@ -13,7 +13,6 @@ import {
 } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import { useStoreContext } from "../../context/StoreContext";
-import { Basket } from "../models/basket";
 
 const midLinks = [
   { title: "catalog", path: "/catalog" },

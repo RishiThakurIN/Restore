@@ -1,5 +1,4 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
-import { Navigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { router } from "../router/Routes";
 

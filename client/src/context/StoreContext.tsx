@@ -12,17 +12,22 @@ interface StoreContextValue {
   removeItem: (productId: number, quantity: number) => void;
 }
 
+//  creating context
 export const StoreContext = createContext<StoreContextValue | undefined>(
   undefined
 );
 
+//  useStoreContext method return context object
 export function useStoreContext() {
+
+  //  useContext to read and subscribe to the context.
   const context = useContext(StoreContext);
 
   if (context === undefined) throw Error("Outside provider");
 
   return context;
 }
+
 
 export function StoreProvider({ children }: PropsWithChildren<any>) {
   const [basket, setBasket] = useState<Basket | null>(null);
